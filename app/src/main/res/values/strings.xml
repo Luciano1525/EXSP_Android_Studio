@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pizzeria - Luciano</string>
+    <string name="BtnPs">Seleccionar</string>
+    <string name="BtnRs">Seleccionar</string>
+    <string name="BtnPMx">Comprar</string>
+    <string name="BtnPPt">Comprar</string>
+    <string name="BtnPQ">Comprar</string>
+    <string name="BtnRC">Comprar</string>
+    <string name="BtnRP">Comprar</string>
+    <string name="BtnRF">Comprar</string>
+</resources>

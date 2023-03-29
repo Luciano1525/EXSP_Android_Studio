@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Refrescos">
+
+    <TextView
+        android:id="@+id/tvRefrescos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Menu de Refrescos"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvRefrescoC"
+        android:layout_width="192dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ivRefrescoC"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="-10dp"
+        android:text="Coca Cola"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRefrescoC" />
+
+    <ImageView
+        android:id="@+id/ivRefrescoC"
+        android:layout_width="131dp"
+        android:layout_height="106dp"
+        android:layout_below="@+id/tvRefrescos"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/coca"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <TextView
+        android:id="@+id/tvPrecioRefrescoC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="116dp"
+        android:layout_toEndOf="@+id/ivRefrescoC"
+        android:text="$50.00"
+        android:textColor="@color/colorTextSecundary"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btComprarRC"
+        android:layout_width="146dp"
+        android:layout_height="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="68dp"
+        android:layout_toEndOf="@+id/ivRefrescoC"
+        android:text="@string/BtnRC"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btComprarRP"
+        android:layout_width="137dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/tvRefrescoP"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginTop="-75dp"
+        android:layout_marginEnd="75dp"
+        android:text="@string/BtnRP"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivRefrescoP"
+        android:layout_width="130dp"
+        android:layout_height="113dp"
+        android:layout_below="@+id/btComprarRC"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="279dp"
+        app:srcCompat="@drawable/pepsi" />
+
+    <TextView
+        android:id="@+id/tvPrecioRefrescoP"
+        android:layout_width="120dp"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="342dp"
+        android:layout_marginEnd="70dp"
+        android:layout_toEndOf="@+id/ivRefrescoC"
+        android:text="$50.00"
+        android:textColor="@color/colorTextSecundary"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRefrescoP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivRefrescoP"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="219dp"
+        android:text="Pepsi Cola"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivRefrescoF"
+        android:layout_width="137dp"
+        android:layout_height="118dp"
+        android:layout_below="@+id/tvRefrescoP"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="271dp"
+        app:srcCompat="@drawable/fanta" />
+
+    <TextView
+        android:id="@+id/tvPrecioRefrescoF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="566dp"
+        android:layout_toEndOf="@+id/ivRefrescoC"
+        android:text="$50.00"
+        android:textColor="@color/colorTextSecundary"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRefrescoF"
+        android:layout_width="105dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/ivRefrescoF"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="277dp"
+        android:text="Fanta"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btComprarRF"
+        android:layout_width="137dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/tvRefrescoF"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="-82dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/BtnRF"
+        android:textStyle="bold" />
+
+</RelativeLayout>

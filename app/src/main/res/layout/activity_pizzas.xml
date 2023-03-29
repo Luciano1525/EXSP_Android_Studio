@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pizzas">
+
+
+    <TextView
+        android:id="@+id/tvPizzaMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Menu de Pizzas"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPizzaPt"
+        android:layout_width="131dp"
+        android:layout_height="106dp"
+        android:layout_below="@+id/tvPizzaMenu"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pizzapastor"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <TextView
+        android:id="@+id/tvPizzaPt"
+        android:layout_width="192dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ivPizzaPt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-21dp"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="-10dp"
+        android:text="Pizza Pastorera"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPizzaPt" />
+
+    <TextView
+        android:id="@+id/tvPizzaPt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPizzaPt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-9dp"
+        android:text="+ Refresco \n   Ingredientes: \n+ Carne Pastor, Piña"
+        android:textColor="@color/colorIngredientes"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPizzaPt" />
+
+    <TextView
+        android:id="@+id/tvPrecioPizzaPP"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="61dp"
+        android:layout_toEndOf="@+id/ivPizzaPt"
+        android:text="$275.00"
+        android:textColor="@color/colorTextSecundary"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btComprarPt"
+        android:layout_width="146dp"
+        android:layout_height="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="45dp"
+        android:layout_toEndOf="@+id/ivPizzaPt"
+        android:text="@string/BtnPPt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPizzaMx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPizzaMx"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="177dp"
+        android:text="+ Refresco \n   Ingredientes: \n+ Frijol, Chorizo y Cebolla"
+        android:textColor="@color/colorIngredientes"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivPizzaPm"
+        android:layout_width="106dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/btComprarPt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="53dp"
+        app:srcCompat="@drawable/pizza_mexicana" />
+
+    <TextView
+        android:id="@+id/tvPrecioPizzaPM"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="287dp"
+        android:layout_marginEnd="60dp"
+        android:layout_toEndOf="@+id/ivPizzaPm"
+        android:text="$250.00"
+        android:textColor="@color/colorTextSecundary"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btComprarPMx"
+        android:layout_width="137dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/tvPizzaMx2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="226dp"
+        android:layout_marginTop="-141dp"
+        android:layout_marginEnd="46dp"
+        android:text="@string/BtnPMx"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPizzaMx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPizzaPm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="221dp"
+        android:text="Pizza Mexicana"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivPizzaPq"
+        android:layout_width="106dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/tvPizzaMx2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@drawable/pizzaqueso" />
+
+    <TextView
+        android:id="@+id/tvPizzaQ"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/ivPizzaPq"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="213dp"
+        android:text="Pizza Doble Queso"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPizzaQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPizzaQ"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="181dp"
+        android:text="+ Refresco \n   Ingredientes: \n+ Jamon, Doble Queso"
+        android:textColor="@color/colorIngredientes"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPrecioPizzaPQ"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="146dp"
+        android:layout_toEndOf="@+id/ivPizzaPq"
+        android:text="$200.00"
+        android:textColor="@color/colorTextSecundary"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btComprarPq"
+        android:layout_width="137dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/tvPizzaQ2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="-94dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/BtnPQ"
+        android:textStyle="bold" />
+
+</RelativeLayout>

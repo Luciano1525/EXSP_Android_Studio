@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="289dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="117dp"
+        android:text="Menu Princcipal"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPizzas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="99dp"
+        android:text="Pizzas"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivPizzas"
+        android:layout_width="152dp"
+        android:layout_height="116dp"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="137dp"
+        app:srcCompat="@drawable/pizzas" />
+
+    <Button
+        android:id="@+id/btComprarP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPizzas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="134dp"
+        android:text="@string/BtnPs"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/tvRefrescos"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btComprarP"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="102dp"
+        android:text="Refrescos"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivRefrescos"
+        android:layout_width="wrap_content"
+        android:layout_height="149dp"
+        android:layout_below="@+id/tvRefrescos"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="98dp"
+        app:srcCompat="@drawable/refrescos" />
+
+    <Button
+        android:id="@+id/btComprarR"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_below="@+id/ivRefrescos"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="134dp"
+
+        android:layout_marginBottom="27dp"
+        android:text="@string/BtnRs"
+        android:textStyle="bold" />
+
+</RelativeLayout>
